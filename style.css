@@ -1,0 +1,107 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  background-color: rgb(27, 33, 42);
+  width: 88%;
+  max-width: 360px;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.container .card .logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(38, 47, 55);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card h1 {
+  font-size: 1.6em;
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 1rem;
+}
+.container .card .text {
+  color: hsl(217deg, 12%, 63%);
+  font-size: 0.95em;
+  line-height: 1.4rem;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+}
+.container .card .rating-scores {
+  display: flex;
+  justify-content: space-between;
+}
+.container .card .rating-scores .rate-btn {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(38, 47, 55);
+  color: hsl(217deg, 12%, 63%);
+}
+.container .card .rating-scores .rate-btn:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.container .card .rating-scores .rate-btn:focus {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+.container .card .submit-rating {
+  width: 100%;
+  cursor: pointer;
+  background-color: hsl(25deg, 97%, 53%);
+  border: none;
+  color: hsl(0deg, 0%, 100%);
+  padding: 1rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  margin-top: 1.5rem;
+}
+.container .card .submit-rating:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+.container .card__component-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container .card__component-2 .image {
+  margin-top: 1rem;
+}
+.container .card__component-2 .result {
+  background-color: rgb(38, 47, 55);
+  color: hsl(25deg, 97%, 53%);
+  padding: 0.4rem 0.7rem;
+  border-radius: 1rem;
+  width: fit-content;
+  margin: 1rem auto 0 auto;
+}
+.container .card .hide {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  background-color: hsl(216deg, 12%, 8%);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+@import "color";
+@import "card";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    background-color: $Very-Dark-Blue;
+
+}
+// .container {
+//     max-width: 1440px;
+//     min-height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+

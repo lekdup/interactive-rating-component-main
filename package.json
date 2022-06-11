@@ -1,0 +1,17 @@
+{
+  "name": "interactive-rating-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./scss/main.scss:./style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^17.7.2",
+    "node-sass": "^7.0.1",
+    "sass": "^1.52.1"
+  }
+}

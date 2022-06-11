@@ -1,0 +1,100 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .card {
+        background-color: $Dark-Blue;
+        width: 88%;
+        max-width: 360px;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        
+        .logo{
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: $Medium-Grey;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 1.6em;
+            color: $White;
+            margin-top: 1rem;
+        }
+        .text {
+            color: $Light-Grey;
+            font-size: .95em;
+            line-height: 1.4rem;
+            margin-top: .6rem;
+            margin-bottom: 1rem;
+        }
+        .rating-scores{
+            display: flex;
+            justify-content: space-between;
+            .rate-btn{
+                cursor: pointer;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+                border: none;
+                background-color: $Medium-Grey;
+                color: $Light-Grey;
+                &:hover{
+                    background-color: $Orange;
+                    color: $White;
+                }
+                &:focus{
+                    background-color: $Light-Grey;
+                    color: $White;
+                }
+            }
+        }
+        .submit-rating{
+            width: 100%;
+            cursor: pointer;
+            background-color: $Orange;
+            border: none;
+            color: $White;
+            padding: 1rem;
+            border-radius: 2rem;
+            text-transform: uppercase;
+            font-size: .9rem;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            margin-top: 1.5rem;
+            &:hover{
+                background-color: $White;
+                color: $Orange;
+            }
+        }
+       
+        &__component-2 {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .image {
+                margin-top: 1rem;
+            }
+            .result {
+                background-color: $Medium-Grey;
+                color: $Orange;
+                padding: .4rem .7rem;
+                border-radius: 1rem;
+                width: fit-content;
+                margin: 1rem auto 0 auto;
+            }
+        } //component-2
+
+        .hide {
+            display: none;
+        }
+    
+    // card
+    }
+
+}
