@@ -36,6 +36,8 @@
         .rating-scores{
             display: flex;
             justify-content: space-between;
+            text-align: center;
+            list-style: none;
             .rate-btn{
                 cursor: pointer;
                 width: 2.5rem;

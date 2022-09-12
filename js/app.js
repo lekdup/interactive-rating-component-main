@@ -1,9 +1,10 @@
-let card_content_1 = document.querySelector('.card__component-1');
-let card_content_2 = document.querySelector('.card__component-2');
-let ratingBtns = document.querySelector('.rate-btn');
-let score = document.querySelector('.score');
+const card_content_1 = document.querySelector('.card__component-1');
+const card_content_2 = document.querySelector('.card__component-2');
 let ratingSubmitContainerEl = document.querySelector('.rate-submit-container');
 const submitBtn = document.querySelector(".submit-rating");
+
+const ratingBtns = document.querySelectorAll('.rate-btn');
+const score = document.querySelector('.score');
 
 submitBtn.addEventListener("click", function(e){
     e.preventDefault();
@@ -11,6 +12,11 @@ submitBtn.addEventListener("click", function(e){
     card_content_2.classList.remove('hide');
 });
 
+ratingBtns.forEach((rate) => {
+    rate.addEventListener("click", ()=>{
+        console.log(rate.innerHTML);
+    })
+})
 
 
 
