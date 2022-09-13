@@ -1,46 +1,51 @@
-.container {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
 }
-.container .card {
+
+.card {
   background-color: rgb(27, 33, 42);
-  width: 88%;
   max-width: 360px;
   border-radius: 1rem;
   padding: 1.5rem;
 }
-.container .card .logo {
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: rgb(38, 47, 55);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container .card h1 {
+.card h1 {
   font-size: 1.6em;
   color: hsl(0deg, 0%, 100%);
   margin-top: 1rem;
 }
-.container .card .text {
+.card p {
   color: hsl(217deg, 12%, 63%);
   font-size: 0.95em;
   line-height: 1.4rem;
-  margin-top: 0.6rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
-.container .card .rating-scores {
+
+.component-1 .logo {
+  background-color: rgb(38, 47, 55);
+  padding: 1rem;
+  border-radius: 50%;
+}
+.component-1 .rating-scores {
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  flex-wrap: wrap;
   list-style: none;
 }
-.container .card .rating-scores .rate-btn {
+.component-1 .rating-scores .rate-btn {
+  display: grid;
+  place-items: center;
   cursor: pointer;
+  padding-top: 0.2rem;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -48,49 +53,54 @@
   background-color: rgb(38, 47, 55);
   color: hsl(217deg, 12%, 63%);
 }
-.container .card .rating-scores .rate-btn:hover {
+.component-1 .rating-scores .rate-btn:hover {
   background-color: hsl(25deg, 97%, 53%);
   color: hsl(0deg, 0%, 100%);
 }
-.container .card .rating-scores .rate-btn:focus {
+.component-1 .rating-scores .rate-btn:focus, .component-1 .rating-scores .rate-btn:active {
   background-color: hsl(217deg, 12%, 63%);
   color: hsl(0deg, 0%, 100%);
 }
-.container .card .submit-rating {
+
+.submit-rating {
   width: 100%;
   cursor: pointer;
   background-color: hsl(25deg, 97%, 53%);
   border: none;
   color: hsl(0deg, 0%, 100%);
   padding: 1rem;
-  border-radius: 2rem;
+  border-radius: 100vmax;
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   margin-top: 1.5rem;
 }
-.container .card .submit-rating:hover {
+.submit-rating:hover {
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
 }
-.container .card__component-2 {
+
+.component-2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   text-align: center;
 }
-.container .card__component-2 .image {
-  margin-top: 1rem;
+.component-2 img {
+  margin: 1rem auto;
 }
-.container .card__component-2 .result {
+.component-2 .result > p {
   background-color: rgb(38, 47, 55);
   color: hsl(25deg, 97%, 53%);
   padding: 0.4rem 0.7rem;
-  border-radius: 1rem;
+  border-radius: 100vmax;
   width: fit-content;
   margin: 1rem auto 0 auto;
 }
-.container .card .hide {
+
+.hide {
   display: none;
 }
 
